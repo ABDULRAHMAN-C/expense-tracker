@@ -1,0 +1,157 @@
+body{
+  background-color:#f3fcff;
+}
+.expense-container{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.expense-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.expense-item.income{
+  border-right: 5px solid greenyellow;
+}
+
+.expense-item.expense{
+  border-right:5px solid red;
+}
+
+.expense-item.income .expense-amount{
+  color: greenyellow;
+}
+
+.expense-item.expense .expense-amount{
+  color: red;
+}
+
+.expense-form{
+  padding: 10px;
+  padding-top: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+
+}
+input{
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button{
+  padding: 10px;
+  border-radius: 5px;
+  border:none;
+  color: #ddd;
+  cursor: pointer;
+  width: 100%;
+  background-color: purple;
+}
+
+.balance-container{
+  background-color: #8602ab;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.currency-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a412be;
+  border-radius: 10px;
+  padding: 20px 30px;
+  color:white;
+}
+
+.currency-item .title{
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.currency-item .amount{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.error{
+  color: red;
+}
+
+.expense-item {
+  display: flex; 
+  align-items: center; 
+  padding: 10px;
+  border: 1px solid #eee;
+  margin-bottom: 5px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  position: relative; 
+}
+
+.expense-title {
+  flex-grow: 1; 
+  padding-right: 10px; 
+}
+
+.expense-amount {
+  text-align: right; 
+  min-width: 80px; 
+  font-weight: bold;
+}
+
+.delete-button-overlay {
+
+  left: 50%; 
+  transform: translateX(-50%); 
+  padding: 20%; ;
+  width: 70%;
+}
+
+.delete-button-overlay button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-button-overlay button:hover {
+  background-color: #cc0000;
+}
+
+
+.expense-item.income {
+  border-left: 5px solid #28a745; 
+}
+
+.expense-item.expense {
+  border-left: 5px solid #dc3545; 
+}
+.expense-item.editing{
+  border: 2px solid purple; 
+}
